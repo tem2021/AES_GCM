@@ -49,7 +49,7 @@ def iv_reused_attack_c():
     msg2_info = f"[*] Msg 2: '{p2_str}' (Len: {len(p2)*8} bits)"
     msg3_info = f"[*] Msg 3: '{p3_str}' (Len: {len(p3)*8} bits)"
     
-    # Pad to 50 characters (adjustable based on longest message)
+    # Pad to 45 characters (adjustable based on longest message)
     print(f"{msg1_info:<45} | Tag: {list_to_hex(t1)}")
     print(f"{msg2_info:<45} | Tag: {list_to_hex(t2)}")
     print(f"{msg3_info:<45} | Tag: {list_to_hex(t3)} (Verifier)")
