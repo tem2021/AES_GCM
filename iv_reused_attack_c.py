@@ -14,7 +14,7 @@ def pad_block(data):
     """Pad data to 16 bytes (128 bits) with zeros."""
     return data + [0] * (16 - len(data))
 
-def iv_reused_attack_b():
+def iv_reused_attack_c():
     # Simulation of the shared key between the Bank and Alice
     key = hex_to_list("feffe9928665731c6d6a8f9467308308")
     # FATAL ERROR: The same IV is reused for different messages
@@ -174,4 +174,4 @@ def iv_reused_attack_b():
         print("[FAIL] Bank System: ERROR! Tampering detected.")
 
 if __name__ == "__main__":
-    iv_reused_attack_b()
+    iv_reused_attack_c()
